@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./style.css">
-        <title>Sudoku Solver</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sudoku Solver</title>
+</head>
+
+<body>
+    <div class="container">
         <h1>Sudoku Solver</h1>
         <p>Enter the numbers you know into the appropriate cells.<br>
-        Click <strong>Solve</strong> to solve the puzzle or <strong>Reset</strong> to start over.</p>
-        <table id="tab"></table>
-        <button id="solve">Solve</button>
-        <button id="reset">Reset</button>
-        <script src="./main.js"></script>
-    </body>
+            Click <strong>Solve</strong> to solve the puzzle or <strong>Reset</strong> to start over.</p>
+        <div>
+            <table id="tab"></table>
+        </div>
+        <div class="buttons">
+            <button onclick="solve()">Solve</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
 </html>
